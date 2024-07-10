@@ -1,0 +1,131 @@
+.table-like {
+    display: table;
+    width: 100%; /* Adjust width as needed */
+    border-collapse: collapse; /* Remove borders between cells */
+  }
+  
+  .table-like th, .table-like td {
+    display: table-cell;
+    padding: 5px; /* Adjust padding as needed */
+    border: 1px solid #ddd; /* Add borders */
+    text-align: left; /* Align content left */
+  }
+  
+  .table-like th {
+    font-weight: bold; /* Bold font for headers */
+  }
+  
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse; /* Remove default table borders */
+  }
+  
+  .table-header {
+    border: 5px solid #ddd; /* Add a thicker border to the header */
+  }
+  
+  /* Styles for table headers (th) */
+  .table-header th {
+    padding: 5px 10px; /* Add padding to headers */
+    text-align: left; /* Align header content left */
+    font-weight: bold; /* Bold font for headers */
+    border: 1px solid #ddd; /* Add borders to headers */
+  }
+  
+  /* Styles for the table body (tbody) */
+  .table-body {
+    border: 2px solid #ddd; /* Add a border to the body */
+  }
+  
+  /* Styles for table rows (tr) */
+  .table-row {
+    background-color: #fff; /* Set default background color for rows */
+  }
+  
+  .table-row:nth-child(even) { /* Style even rows */
+    background-color: #f2f2f2; /* Alternate background color for even rows */
+  }
+  
+  /* Styles for table cells (td) */
+  .table td {
+    padding: 5px 10px; /* Add padding to cells */
+    /* border: 1px solid #ddd; Add borders to cells */
+  }
+  
+  /* Specific styles for the "Points Discussed" cell */
+  .points-discussed-input {
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Styles for select element (status dropdown) */
+  .status-select {
+    padding: 6px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Add rounded corners */
+    background-color: #f4f4f4; /* Set background color */
+  }
+  
+  /* Styles for input elements (suggestedBy and responsibility) */
+  .suggested-by-input,
+  .responsibility-input {
+    padding: 6px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Add rounded corners */
+    background-color: #f4f4f4; /* Set background color */
+    width: 100%; /* Set width to 100% */
+  }
+  
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.show-dropdown .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #898f89;
+}
+
+.dropbtn {
+  background-color: #756d6d;
+  color: rgb(0, 0, 0);
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+

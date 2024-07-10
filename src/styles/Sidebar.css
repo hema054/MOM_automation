@@ -1,0 +1,241 @@
+/* Sidebar.css */
+
+@font-face {
+  font-family: 'Font Awesome';
+  src: url('/fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('/fonts/fontawesome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Sidebar {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 50px auto;
+    /* grid-column: 1; */
+    grid-row: 2;
+    height: 200%;
+    width: 250px;
+    
+    background-color: #475563;
+    z-index: 1;
+    
+  }
+  .documents-container {
+    position: relative;
+  }
+  .text1{
+    font-size:20px;
+    color: black;
+    font-weight: bold;
+  }
+  .text2{
+    font-size:20px;
+    color: rgba(255, 38, 0, 0.89);
+    font-weight: 10px;
+  }
+  .SidebarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    top:2%;
+  }
+  
+  .SidebarList .row {
+    width: 100%;
+    height: 50px;
+   position: relative;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .SidebarList .row:hover {
+    cursor: pointer;
+    background-color: #293846;
+  }
+  
+  .SidebarList #active {
+    background-color: #293846;
+  }
+  
+  .row #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .row #title {
+    flex: 70%;
+    color: black;
+    font-size: 20px;
+  }
+  .create-new-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .form-item {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+  }
+  
+  .form-item label {
+    margin-bottom: 5px;
+  }
+  
+  .form-item input,
+  .form-item textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .form-item textarea {
+    height: 100px;
+  }
+  
+  .Table {
+    margin-top: 20px;
+  }
+  /* ////////////////////////// */
+  .Sidebar {
+    height: 100%;
+    width: 270px;
+    background-color: #404956;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .text1 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .text2 {
+    font-size: 20px;
+    color: rgba(255, 38, 0, 0.89);
+    font-weight: 10px;
+  }
+  
+  .SidebarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .SidebarList .row {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .SidebarList .row:hover {
+    cursor: pointer;
+    background-color: #293846;
+  }
+  
+  .SidebarList #active {
+    background-color: #293846;
+  }
+  
+  .row #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .row #title {
+    flex: 70%;
+    color: black;
+    font-size: 20px;
+  }
+  /* For dropdown */
+  /* Dropdown Menu Styles */
+  .SidebarList li {
+    margin-bottom: 10px; /* Optional spacing between list items */
+    z-index: 10;
+  }
+  
+  
+  .row.active .dropdown-list {
+    display: block; /* Show the dropdown on hover/click (modify as needed) */
+  }
+  
+  /* Optional styles for a subtle hover effect on the parent "Documents" item */
+  .row:hover {
+    background-color: #f2f2f2; /* Lighten background on hover */
+    cursor: pointer; /* Indicate interactivity with a cursor change */
+  }
+  .SidebarList .row.documents:hover {  /* Target the "Documents" row only */
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  .SidebarList li {
+    margin-bottom: 10px; /* Optional spacing between list items */
+    position: relative;  /* Added position for parent */
+    z-index: 10;  /* Optional z-index for the parent */
+  }
+  
+  .dropdown-list {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #404956;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-list.show {
+    display: block; /* Visible when the "Documents" menu item is clicked */
+  }
+  
+  /* .row.active .dropdown-list {
+    display: block;
+  } */
+  /*for arrow mark*/
+  
+  .arrow-icon {
+    color:rgb(0, 0, 0);
+    z-index: 40;
+    font-family: Font Awesome;
+    /* Style the icon here (using font-family or SVG) */
+    font-size: 12px; /* Adjust font size or icon size as needed */
+    margin-left: 5px; /* Adjust spacing as needed */
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  .documents-container.open .arrow-icon {
+    transform: rotate(180deg); /* Rotate icon downward when open */
+  }
+  

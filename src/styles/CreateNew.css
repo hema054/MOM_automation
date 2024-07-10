@@ -1,0 +1,72 @@
+/* src/styles/createnew.css */
+
+.create-new-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-row {
+    margin-bottom: 20px;
+  }
+  
+  .form-item {
+    margin-bottom: 15spx;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="datetime-local"],
+  textarea,
+  option,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:10px;
+  }
+ 
+  .submit-btn,
+  .download-pdf-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .download-pdf-btn {
+    background-color: #008CBA;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .text {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  th, td {
+     /* Black border for each cell */
+    padding: 10px; /* Optional padding for better readability */
+  }
+  
+  

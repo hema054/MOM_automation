@@ -1,0 +1,102 @@
+table {
+    border-collapse: collapse; /* Ensures borders are drawn between cells */
+  }
+  
+  th, td {
+    border: 1px solid black; /* Black border for each cell */
+    padding: 5px; /* Optional padding for better readability */
+  }
+  
+  .dynamic-table-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    /* display: flex; Makes the container a flexbox */
+    /* justify-contesnt: space-between;  */
+  }
+  
+  .dynamic-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dynamic-table th,
+  .dynamic-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dynamic-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .table-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .table-input:focus {
+    border-color: #4CAF50;
+  }
+  
+  
+  .add-row-button{
+    display: block;
+    
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #5b8cc3;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-column-button{
+    display: block;
+    width: 120px;
+    
+    padding:12px;
+    margin-top: 10px;
+    background-color: #5b8cc3;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-row-button:hover,
+  .add-column-button:hover,
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .submitted-table {
+    margin-top: 20px;
+  }
