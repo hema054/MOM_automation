@@ -7,6 +7,7 @@ function Card() {
            <img className="card-image" src={profile} alt="profile"></img>
            <h2 className="card-title">MoM automation portal</h2>
            <p className="card-text">Welcome  back , User!</p>
+           <a href="About">Click here!</a>
            </center>
         </div>
     );
